@@ -8,9 +8,7 @@ This repository is intended to be in your home directory, with `/etc/nixos` syml
 ```bash
 # Clone the repo into the home directory (with a temporary git install)
 cd
-nix-shell -p git
-git clone https://github.com/tlovell-sxt/nixos-config
-exit
+nix-shell -p git --command "git clone https://github.com/tlovell-sxt/nixos-config"
 
 # Backup the original configuration
 sudo mv /etc/nixos /etc/nixos.bak
@@ -21,9 +19,7 @@ sudo ln -s ~/nixos-config /etc/nixos
 # Create a me.nix with your details...
 cd nixos-config
 cp me.nix.template me.nix
-nix-shell -p neovim
-nvim me.nix
-exit
+nix-shell -p neovim --command "nvim me.nix"
 
 # Build the new configuration
 sudo nixos-rebuild switch
