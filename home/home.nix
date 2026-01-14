@@ -15,6 +15,7 @@ in
       enable = true;
       bashrcExtra = ''
         set -o vi
+	export EDITOR=nvim
       '';
     };
 
