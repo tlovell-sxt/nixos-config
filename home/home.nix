@@ -18,10 +18,11 @@ in
       '';
     };
 
-    programs.git = {
+    programs.git = let me = import ../me.nix; in
+    {
       enable = true;
-      userName = "Trevor Lovell";
-      userEmail = "trevor.lovell@makeinfinite.com";
+      userName = me.gitUserName;
+      userEmail = me.gitUserEmail;
     };
 
     programs.ripgrep.enable = true;
