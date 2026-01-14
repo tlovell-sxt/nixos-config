@@ -18,8 +18,10 @@ sudo mv /etc/nixos /etc/nixos.bak
 # Create the symlink
 sudo ln -s ~/nixos-config /etc/nixos
 
-# Edit the me.nix with your details...
-nvim ~/nixos-config/me.nix
+# Create a me.nix with your details...
+cd nixos-config
+cp me.nix.template me.nix
+nvim me.nix
 
 # Build the new configuration
 sudo nixos-rebuild switch
