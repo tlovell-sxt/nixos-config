@@ -21,7 +21,9 @@ sudo ln -s ~/nixos-config /etc/nixos
 # Create a me.nix with your details...
 cd nixos-config
 cp me.nix.template me.nix
+nix-shell -p neovim
 nvim me.nix
+exit
 
 # Build the new configuration
 sudo nixos-rebuild switch
