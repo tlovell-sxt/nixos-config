@@ -1,25 +1,17 @@
-# Edit this configuration file to define what should be installed on
-# your system. Help is available in the configuration.nix(5) man page, on
-# https://search.nixos.org/options and in the NixOS manual (`nixos-help`).
-
-# NixOS-WSL specific options are documented on the NixOS-WSL repository:
-# https://github.com/nix-community/NixOS-WSL
+# This is a minimal configuration.nix for..
+# - use in wsl
+# - transitioning from configuration.nix to flake.nix immediately
+#
+# This file should never need to be changed.
 
 { config, lib, pkgs, ... }:
 
 {
-  imports = [
-    # include NixOS-WSL modules
-    <nixos-wsl/modules>
-    ./home/home.nix
-  ];
-
   wsl.enable = true;
   wsl.defaultUser = "nixos";
 
   environment.systemPackages = with pkgs; [
-    xclip
-    neovim
+    git
   ];
 
   nix.settings.experimental-features = [
