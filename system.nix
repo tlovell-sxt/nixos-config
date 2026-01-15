@@ -1,4 +1,4 @@
-{ config, pkgs, inputs, ... }:
+{ pkgs, ... }:
 {
   wsl.enable = true;
   wsl.defaultUser = "nixos";
