@@ -12,7 +12,7 @@
     '';
   };
 
-  programs.git = let me = import ./me.nix; in
+  programs.git = let me = import ../me.nix; in
   {
     enable = true;
     settings.user.name = me.gitUserName;
