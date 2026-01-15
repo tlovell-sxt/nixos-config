@@ -24,7 +24,6 @@ sudo nixos-rebuild switch
 
 # Ignore changes to the me.nix..
 cd ~/nixos-config && git update-index --skip-worktree me.nix
-
 ```
 
 And that's it!
