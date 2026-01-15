@@ -3,11 +3,12 @@
   home.username = "nixos";
   home.homeDirectory = "/home/nixos";
 
+  home.sessionVariables.EDITOR = "nvim";
+
   programs.bash = {
     enable = true;
     bashrcExtra = ''
       set -o vi
-	export EDITOR=nvim
     '';
   };
 
