@@ -16,13 +16,15 @@ sudo mv /etc/nixos /etc/nixos.bak
 # Create the symlink
 sudo ln -s ~/nixos-config /etc/nixos
 
-# Create a me.nix with your details...
-cd nixos-config
-cp me.nix.template me.nix
-nix-shell -p neovim --command "nvim me.nix"
+# Edit me.nix with your details...
+nix-shell -p neovim --command "nvim ~/nixos-config/me.nix"
 
 # Build the new configuration
 sudo nixos-rebuild switch
+
+# Ignore changes to the me.nix..
+cd ~/nixos-config && git update-index --skip-worktree me.nix
+
 ```
 
 And that's it!
