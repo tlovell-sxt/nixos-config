@@ -3,10 +3,7 @@
 # - transitioning from configuration.nix to flake.nix immediately
 #
 # This file should never need to be changed.
-
-{ config, lib, pkgs, ... }:
-
-{
+{pkgs, ...}: {
   wsl.enable = true;
   wsl.defaultUser = "nixos";
 
