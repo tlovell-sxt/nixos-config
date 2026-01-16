@@ -9,18 +9,19 @@
         name = "dracula";
       };
 
+      spellcheck.enable = true;
+
       lsp = {
         enable = true;
         formatOnSave = true;
       };
-
-      git.enable = true;
 
       languages.nix = {
         enable = true;
         format.enable = true;
         lsp.enable = true;
       };
+
       languages.rust = {
         enable = true;
         format.enable = true;
