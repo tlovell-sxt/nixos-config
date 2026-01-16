@@ -2,7 +2,7 @@
   imports = [
     ./bash.nix
     ./git.nix
-    ./nvf.nix
+    ./nvim.nix
   ];
 
   programs.ripgrep.enable = true;
