@@ -46,6 +46,8 @@
       utility.surround.enable = true;
 
       autocomplete.blink-cmp.enable = true;
+
+      statusline.lualine.enable = true;
     };
   };
 }
