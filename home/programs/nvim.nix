@@ -44,6 +44,8 @@
       comments.comment-nvim.enable = true;
 
       utility.surround.enable = true;
+
+      autocomplete.blink-cmp.enable = true;
     };
   };
 }
