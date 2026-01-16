@@ -31,6 +31,15 @@
         rustfmt_command = "rustfmt --config imports_granularity=Module,group_imports=StdExternalCrate,imports_layout=HorizontalVertical";
         rustfmt_autosave = 1;
       };
+
+      keymaps = [
+        {
+          key = "<leader>lge";
+          mode = "n";
+          silent = true;
+          action = ":RustLsp expandMacro<CR>";
+        }
+      ];
     };
   };
 }
