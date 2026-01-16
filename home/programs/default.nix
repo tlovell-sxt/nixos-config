@@ -8,4 +8,6 @@
   programs.ripgrep.enable = true;
 
   programs.gh.enable = true;
+
+  programs.k9s.enable = true;
 }
