@@ -27,3 +27,41 @@ cd ~/nixos-config && git update-index --skip-worktree me.nix
 ```
 
 And that's it!
+
+## Vim Keybindings cheatsheet
+The neovim config is a somewhat minimal configuration of [`nvf`](https://nvf.notashelf.dev/), which comes with a lot of sensible, familiar defaults.
+
+Regardless, here's some of the more useful keybindings for the enabled plugins...
+
+**NOTE: `<leader>` is set to `space`**
+
+### Comments
+| Key | Action |
+| --- | --- |
+| `gc` | toggle comment selection |
+| `gcc` | toggle comment line |
+
+### Language servers
+Currently only nix and rust are enabled, enabling others is simple in `home/programs/nvim.nix`.
+| Key | Action |
+| --- | --- |
+| `<leader>lgd` | go to definition |
+| `<leader>lgr` | go to references |
+| `<leader>ln` | rename symbol under cursor |
+| `<leader>le` | show error under cursor |
+| `<leader>lgn` | go to next error |
+| `<leader>lgp` | go to previous error |
+| `<leader>lge` | expand macro (custom, rust-specific) |
+
+### Surround
+Change or add surroundings, e.g. `""` or `()`.
+| Key | Action |
+| --- | --- |
+| `gz<sur>` | surround the selection with `<sur>` |
+| `gzr<old-sur><new-sur>` | change the `<old-sur>` surrounding the cursor to `<new-sur>`. Some examples: |
+| `gzr})` | change the `{}` around cursor with `()` |
+| `gzr'"` | change the `''` around cursor with `""` |
+| `gz<motion><sur>` | surround `<motion>` with `<sur>`. Some examples: |
+| `gziw"` | surround current word with quotes |
+| `gza"'` | surround the current `""` string with another pair of `''` |
+
