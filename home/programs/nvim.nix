@@ -40,6 +40,10 @@
           action = ":RustLsp expandMacro<CR>";
         }
       ];
+
+      comments.comment-nvim.enable = true;
+
+      utility.surround.enable = true;
     };
   };
 }
