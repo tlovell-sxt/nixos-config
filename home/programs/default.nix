@@ -3,6 +3,7 @@
     ./bash.nix
     ./git.nix
     ./nvim.nix
+    ./direnv.nix
   ];
 
   programs.ripgrep.enable = true;
