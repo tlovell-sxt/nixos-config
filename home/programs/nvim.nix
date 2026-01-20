@@ -3,6 +3,9 @@
 
   programs.nvf = {
     enable = true;
+
+    enableManpages = true;
+
     settings.vim = {
       theme = {
         enable = true;
