@@ -30,6 +30,11 @@
         lsp.enable = true;
       };
 
+      languages.yaml = {
+        enable = true;
+        lsp.enable = true;
+      };
+
       globals = {
         rustfmt_command = "rustfmt --config imports_granularity=Module,group_imports=StdExternalCrate,imports_layout=HorizontalVertical";
         rustfmt_autosave = 1;
