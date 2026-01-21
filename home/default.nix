@@ -1,6 +1,7 @@
 {
   imports = [
     ./programs
+    ./gpg.nix
   ];
 
   home.username = "nixos";
