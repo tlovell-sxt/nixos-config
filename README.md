@@ -53,6 +53,13 @@ Currently only nix and rust are enabled, enabling others is simple in `home/prog
 | `<leader>lgp` | go to previous error |
 | `<leader>lge` | expand macro (custom, rust-specific) |
 
+### Completion
+| Key | Action |
+| --- | --- |
+| `tab` | next completion |
+| `shift+tab` | previous completion |
+| `ctrl+y` | confirm completion |
+
 ### Surround
 Change or add surroundings, e.g. `""` or `()`.
 | Key | Action |
