@@ -11,6 +11,7 @@
     git
     neovim
     xclip
+    wl-clipboard
   ];
 
   system.stateVersion = "25.11";
