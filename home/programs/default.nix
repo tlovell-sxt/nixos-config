@@ -11,4 +11,6 @@
   programs.gh.enable = true;
 
   programs.k9s.enable = true;
+
+  programs.password-store.enable = true;
 }
