@@ -53,7 +53,10 @@
 
       utility.surround.enable = true;
 
-      autocomplete.blink-cmp.enable = true;
+      autocomplete.blink-cmp = {
+        enable = true;
+        mappings.confirm = "<C-y>";
+      };
 
       statusline.lualine.enable = true;
     };
