@@ -6,4 +6,9 @@
     settings.user.name = me.gitUserName;
     settings.user.email = me.gitUserEmail;
   };
+
+  programs.delta = {
+    enable = true;
+    enableGitIntegration = true;
+  };
 }
