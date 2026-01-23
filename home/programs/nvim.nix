@@ -55,7 +55,7 @@
 
       autocomplete.blink-cmp = {
         enable = true;
-        mappings.confirm = "<C-y>";
+        setupOpts.completion.list.selection.preselect = false;
       };
 
       statusline.lualine.enable = true;

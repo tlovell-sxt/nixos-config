@@ -54,11 +54,13 @@ Currently only nix and rust are enabled, enabling others is simple in `home/prog
 | `<leader>lge` | expand macro (custom, rust-specific) |
 
 ### Completion
+Preselect is turned off, so you need to `tab` to the first option.
 | Key | Action |
 | --- | --- |
 | `tab` | next completion |
 | `shift+tab` | previous completion |
-| `ctrl+y` | confirm completion |
+| `enter` | confirm completion |
+| `ctrl+space` | show completion menu (usually is shown automatically though) |
 
 ### Surround
 Change or add surroundings, e.g. `""` or `()`.
