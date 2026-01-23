@@ -1,6 +1,7 @@
 {
   imports = [
     ./programs
+    ./packages
     ./gpg.nix
   ];
 
