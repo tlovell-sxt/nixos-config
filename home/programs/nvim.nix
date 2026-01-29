@@ -63,6 +63,10 @@
       autocomplete.blink-cmp = {
         enable = true;
         setupOpts.completion.list.selection.preselect = false;
+        setupOpts.cmdline.completion = {
+          menu.auto_show = true;
+          list.selection.preselect = false;
+        };
       };
 
       statusline.lualine.enable = true;
