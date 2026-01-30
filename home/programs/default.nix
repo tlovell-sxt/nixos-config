@@ -14,4 +14,6 @@
   programs.password-store.enable = true;
 
   programs.jq.enable = true;
+
+  programs.htop.enable = true;
 }
