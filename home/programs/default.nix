@@ -4,11 +4,10 @@
     ./git.nix
     ./nvim.nix
     ./direnv.nix
+    ./gh.nix
   ];
 
   programs.ripgrep.enable = true;
-
-  programs.gh.enable = true;
 
   programs.k9s.enable = true;
 
