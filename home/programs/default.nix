@@ -13,4 +13,6 @@
   programs.k9s.enable = true;
 
   programs.password-store.enable = true;
+
+  programs.jq.enable = true;
 }
