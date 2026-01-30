@@ -3,5 +3,6 @@
     (callPackage ./rancher-cli.nix {})
     kubectl
     unixtools.xxd
+    tree
   ];
 }
