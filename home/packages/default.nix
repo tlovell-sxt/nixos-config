@@ -4,5 +4,7 @@
     kubectl
     unixtools.xxd
     tree
+    (azure-cli.withExtensions [azure-cli-extensions.resource-graph])
+    kubelogin
   ];
 }
