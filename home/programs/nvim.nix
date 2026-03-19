@@ -42,6 +42,12 @@
         lsp.enable = true;
       };
 
+      languages.python = {
+        enable = true;
+        lsp.enable = true;
+        format.enable = true;
+      };
+
       globals = {
         rustfmt_command = "rustfmt --config imports_granularity=Module,group_imports=StdExternalCrate,imports_layout=HorizontalVertical";
         rustfmt_autosave = 1;
