@@ -14,10 +14,5 @@
     wl-clipboard
   ];
 
-  nixpkgs.config.allowUnfree = true;
-
-  # Needed for compiling blitzar :(
-  programs.nix-ld.enable = true;
-
   system.stateVersion = "25.11";
 }
