@@ -16,4 +16,6 @@
   programs.jq.enable = true;
 
   programs.htop.enable = true;
+
+  programs.jrnl.enable = true;
 }
