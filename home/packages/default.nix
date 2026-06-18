@@ -3,7 +3,8 @@
     kubectl
     unixtools.xxd
     tree
-    (azure-cli.withExtensions [azure-cli-extensions.resource-graph])
+    (azure-cli.withExtensions (with azure-cli-extensions; [resource-graph ssh]))
     kubelogin
+    jfrog-cli
   ];
 }
