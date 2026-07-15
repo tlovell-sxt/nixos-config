@@ -14,6 +14,9 @@
     wl-clipboard
   ];
 
+  virtualisation.docker.enable = true;
+  users.users.nixos.extraGroups = ["docker"];
+
   nixpkgs.config.allowUnfree = true;
 
   # Needed for compiling blitzar :(
