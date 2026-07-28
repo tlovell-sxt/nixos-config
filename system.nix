@@ -22,5 +22,7 @@
   # Needed for compiling blitzar :(
   programs.nix-ld.enable = true;
 
+  time.timeZone = "America/Denver";
+
   system.stateVersion = "25.11";
 }
