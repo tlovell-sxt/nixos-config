@@ -48,6 +48,17 @@
         format.enable = true;
       };
 
+      languages.csharp = {
+        enable = true;
+        lsp.enable = true;
+      };
+
+      languages.fsharp = {
+        enable = true;
+        lsp.enable = true;
+        format.enable = true;
+      };
+
       globals = {
         rustfmt_command = "rustfmt --config imports_granularity=Module,group_imports=StdExternalCrate,imports_layout=HorizontalVertical";
         rustfmt_autosave = 1;
